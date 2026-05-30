@@ -1,0 +1,25 @@
+{
+  "name": "doc-scraper",
+  "version": "2.0.0",
+  "private": true,
+  "description": "通用文档站截图抓取 → 单篇 PDF → 带嵌套书签电子书",
+  "type": "module",
+  "scripts": {
+    "login": "node login.mjs",
+    "toc": "node toc.mjs --site labuladong --section algo",
+    "scrape": "node scrape.mjs --site labuladong --section algo",
+    "scrape:test": "node scrape.mjs --site labuladong --section algo --test",
+    "book": "node book.mjs --site labuladong --section algo",
+    "toc:ai": "node toc.mjs --site labuladong --section ai-coding",
+    "scrape:ai": "node scrape.mjs --site labuladong --section ai-coding",
+    "book:ai": "node book.mjs --site labuladong --section ai-coding",
+    "toc:vue3": "node toc.mjs --site vue3-nuxt --section blog",
+    "scrape:vue3": "node scrape.mjs --site vue3-nuxt --section blog",
+    "book:vue3": "node book.mjs --site vue3-nuxt --section blog"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "playwright": "^1.52.0",
+    "pngjs": "^7.0.0"
+  }
+}

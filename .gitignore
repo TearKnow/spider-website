@@ -1,0 +1,27 @@
+# 依赖
+node_modules/
+
+# 抓取产物（可重新生成）
+output/*
+!output/.gitkeep
+test/
+
+# 登录态（含 Cookie，切勿提交）
+auth.json
+auth-*.json
+
+# 目录缓存（node toc.mjs 可重新生成）
+toc.json
+toc-*.json
+
+# 日志
+*.log
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Playwright 浏览器缓存（若本地安装）
+/playwright/.cache/
