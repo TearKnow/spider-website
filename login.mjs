@@ -12,7 +12,7 @@ import { runLogin } from "./lib/login-runner.mjs";
 
 const opts = parseCommonArgs(process.argv.slice(2), { section: "algo" });
 
-runLogin(opts).catch((e) => {
+runLogin({ siteId: opts.site, sectionId: opts.section }).catch((e) => {
   console.error(e);
   process.exit(1);
 });
