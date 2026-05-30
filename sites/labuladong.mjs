@@ -54,6 +54,7 @@ export const site = {
       '[role="dialog"]',
       ".sticky.top-12.pc\\:hidden",
       ".sticky.top-12.lg\\:top-14.pc\\:hidden",
+      ".fixed.top-20.right-4.z-50",
     ],
   },
 
